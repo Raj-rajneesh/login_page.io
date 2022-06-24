@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>server design and login page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 0px;
+            padding: 0px;
+            background-image: url('pexels-gustavo-fring-4173251.jpg');
+        }
+        header{
+            display: flex;
+        }
+        .left{
+            display: block;
+         /* border: 2px solid black; */
+         position: absolute;
+         left: 21px;
+         width: 100px;
+         height:100px;
+        }
+        .left img{
+            height: 80px;
+            width: 100px;
+            border-radius: 50%;
+        }
+        .left div{
+            text-align: center;
+        }
+        .mid{
+          display:  inline block;
+         height: 40px;
+         /* border: 2px solid yellow; */
+         margin: 12px auto;
+         width: 40%;
+        
+        
+         
+        }
+        .right{
+            margin: 12px;
+            display: block;
+            /* border: 2px solid red; */
+            position: absolute;
+            right:0px;
+            top: 0px;
+            width:230px;
+            height: 30px;
+        
+         
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 20px;
+            
+        }
+        .navbar li a{
+            color:white;
+            text-decoration: none;
+            padding: 10px 20px;
+
+        }
+        .navbar li a:hover, .navbar li a.active{
+           text-decoration: underline;
+           color: blue;
+        }
+        .btn{
+            font-family: 'Merriweather', serif;
+            margin: 0px 9px;
+            padding: 4px 14px;
+            border: 2px solid green;
+            border-radius: 10px;
+            cursor: pointer;
+            height: 40px;  
+        }
+        .btn :hover{
+            text-decoration: underline;
+            color: blue;
+        }
+        #botton{
+            margin: 0px;
+        }
+        .container{
+            text-align: center;
+            border: 3px solid blue;
+            margin: 80px 4px;
+            height: 450px;
+            width: 45%;
+            border-radius: 18px;
+            background-color: rgb(163, 240, 240);
+        }
+        .form-group input{
+            font-family: 'Merriweather', serif;
+            text-align: center;
+            display :block;
+            margin: 20px auto;
+            border: 2px solid green;
+            padding: 2px;
+
+        }
+        </style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="doctor-logo-49391.png" alt="">
+            <div>Need helps</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">  
+                <li> <a href="#"> Home</a></li>
+                <li> <a href="#"> About</a></li>
+                <li> <a href="#"> Facility</a></li>
+                <li> <a href="#"> Contact us</a></li>
+             
+            </ul>
+        </div>
+        <!-- right box for button. -->
+        <div class="right">
+        <button class="btn"><p id="botton">Call us now</p> </button>
+        <button class="btn"><p id="botton">Email us</p>  </button>
+        </div>
+        </header>
+        <div class="container">
+        <h1> Take an appointment for a doctor</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Email id">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Contact no.">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Problem">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Home">
+            </div>
+            <button class="btn"> Submit</button>
+        
+
+        </form>
+        </div>
+ </body>
+</html>
